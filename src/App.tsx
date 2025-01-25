@@ -58,14 +58,22 @@ function App() {
 
 
   };
-  const nextQuestion = () => {};
+  const nextQuestion = () => {
+    const nextQuestion = number+1;
+    if(nextQuestion==TOTAL){
+      setGameOver(true);
+    }
+    else{
+      setNumber(nextQuestion);
+    }
+  };
   return (
     <div className="App">
       <h1>REACT QUIZ</h1>
       {gameover || userAnswers.length===TOTAL ? (<button className="start" onClick={startTrivia}>
         Start
       </button>) : null}
-     {!gameover ? ( <p>Score:</p>):null}
+     {!gameover ? ( <p>Score: {score}</p>):null}
      {loading ? <p>Loading Questions...</p> : null}
      {!loading && !gameover && (<QuestionCard 
       questionNo={number+1}
