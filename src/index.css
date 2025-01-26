@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: url("../src/assets/bg.jpg");
+    object-fit: cover;
+}
+
+.rosarivo-regular {
+    font-family: "Rosarivo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .montserrat-700 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .montserrat-400 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
